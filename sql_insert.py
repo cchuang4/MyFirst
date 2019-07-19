@@ -1,6 +1,6 @@
 import csv
 
-with open('q&a.csv', newline='') as csvfile, open('data.sql', 'w', newline='') as sqlfile:
+with open('q&a.csv', newline='') as csvfile, open('data.sql', 'w', encoding='UTF-8', newline='') as sqlfile:
     rows = csv.reader(csvfile)
     category = ''
     content = ''
